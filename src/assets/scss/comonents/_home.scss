@@ -1,0 +1,12 @@
+.home {
+  min-height: 100vh;
+  &__container {
+    grid-template-columns: 1fr;
+    // margin-bottom: 130px;
+  }
+  &__public {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

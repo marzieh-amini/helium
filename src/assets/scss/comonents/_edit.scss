@@ -1,0 +1,15 @@
+.editArticle__container {
+    .tags{
+        &::after{
+            content: "×";
+            margin-right: 10px;
+        }
+        display: inline-block;
+    background-color: #eef2f3;
+    padding: 5px 15px;
+    border-radius: 17px;
+    margin-left: 7px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    }
+}

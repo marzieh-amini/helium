@@ -1,0 +1,88 @@
+@mixin main_section() {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  .title {
+    h1 {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-top: 5px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      label {
+        font-size: 1.8rem;
+      }
+      input {
+        padding: 16px;
+        border: 1px solid $border_Color_blue;
+        // margin-bottom: 15px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        &::placeholder {
+          color: $placeholder_color;
+          font-size: 1.6rem;
+        }
+      }
+
+      .error-message {
+        margin-top: 5px;
+        color: red;
+      }
+    }
+
+    button {
+      align-self: center;
+      padding: 10px 65px;
+    }
+  }
+}
+
+.signin {
+  @include main_section();
+  
+  .login {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 24px 27px 0 27px;
+    color: $bg_btn_color;
+    span {
+      color: $bg_btn_color;
+      border-bottom: 2px solid $bg_btn_color;
+      font-size: 1.5rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.signup {
+  @include main_section();
+}
+.signupdone {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}

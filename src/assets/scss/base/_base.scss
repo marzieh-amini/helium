@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; font-family: map-get($map: $fontFamily, $key: ff-primary);
+}
+html{
+    font-size: 10px;
+}
+body{
+ font-family: map-get($map: $fontFamily, $key: ff-primary);
+ background: $bg_container;
+ color: $primary_text_color;
+ text-align: right;
+ position: relative;
+ overflow-x: hidden;
+}
+p{
+  
+  text-align: justify;
+}
+input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+button{
+    font-family:map-get($map: $fontFamily, $key:ff-primary );
+}
+input:focus {
+    outline: 2px solid $caret_color ;
+  }
+
+  button:focus {
+    outline: none !important;
+  }
+textarea:focus{
+    outline: 2px solid $caret_color;
+}
+a{
+    text-decoration: none;
+    color: $primary_text_color;
+}

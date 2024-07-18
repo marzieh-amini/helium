@@ -1,0 +1,38 @@
+// /////// CONFIG
+@import 'config/fonts';
+@import 'config/variables';
+
+// /////BASE
+@import 'base/base';
+
+///// LAYOUT
+@import 'layout/layout';
+
+///////// COMPONENTS
+@import 'comonents/button';
+@import "comonents/form";
+@import 'comonents/modal';
+@import 'comonents/header';
+@import 'comonents/tabs';
+@import 'comonents/paginateArticle';
+
+@import 'comonents/articlePrev';
+@import 'comonents/home';
+@import 'comonents/loading';
+@import 'comonents/articleView';
+@import 'comonents/createArticle';
+@import 'comonents/search';
+@import 'comonents/authors';
+@import 'comonents/profile';
+@import 'comonents/profileSetting';
+@import 'comonents/edit';
+@import 'comonents/notFound';
+@import 'comonents/notFoundText';
+@import 'comonents/text';
+
+@import 'comonents/register';
+
+@import 'comonents/footer';
+
+@import 'comonents/mediaQueries';
+

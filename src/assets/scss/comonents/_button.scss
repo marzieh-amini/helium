@@ -1,0 +1,70 @@
+.btn {
+  color: #fff;
+  border: unset;
+  background-color: unset;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  &__signup {
+    display: block;
+    background-color: $bg_btn_color;
+    padding: 6px 35px;
+    font-size: 1.8rem;
+  }
+
+  &__follow {
+    cursor: pointer;
+    color: $btn_color;
+    border: 1px solid $btn_color;
+    padding: 2px 6px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__followers {
+    cursor: pointer;
+    color: #fff;
+    background-color: $btn_color;
+    border: 1px solid $btn_color;
+    padding: 2px 6px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__submit{
+    display: block;
+    background-color: $bg_btn_color;
+    padding: 6px 35px;
+    font-size: 1.8rem;
+  }
+  &__websilte{
+    color: $bg_btn_color;
+    border: 1px solid $bg_btn_color;
+    padding: 2px 6px;
+    font-size: 1.6rem;
+    font-weight: normal;
+  } &__follow2{
+    color: #fff;
+    background-color:  $bg_btn_color;
+    padding: 2px 6px;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  &__primary{
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    background-color: $bg_btn_color;
+    border: 1px solid $bg_btn_color;
+
+  }
+  &__primary_outline{
+
+    font-size: 1.6rem;
+    color: $primary_text_color;
+    padding: 5px 10px;
+    background-color: unset;
+    border: 1px solid $bg_btn_color;
+  }
+
+}

@@ -1,0 +1,39 @@
+.search{
+   
+    &__box-input{
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        span{
+            font-size: 1.8rem;
+        }
+        input{
+            flex-grow: 2;
+            border: 0;
+            border-bottom: 1px solid $btn_color !important;
+            background-color: $bg_container;
+            font-size: 2.4rem;
+            font-weight: bold;
+            
+            &:focus {
+                outline: unset !important;
+              }
+        }
+    }
+    &__tags{
+       ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        li{
+            display: inline-block;
+            background-color: #eef2f3;
+            padding: 3px 12px;
+            border-radius: 17px;
+            margin-left: 7px;
+            font-size: 1.2rem;
+        }
+       }
+    }
+}

@@ -1,0 +1,16 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+.section {
+  padding: 50px 0;
+  color: $primary_text_color;
+  flex-grow: 1;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

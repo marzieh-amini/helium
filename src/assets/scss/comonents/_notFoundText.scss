@@ -1,0 +1,15 @@
+.notFoundText{
+    display: grid;
+    // grid-template-rows: 60vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &_content{
+
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+}
+

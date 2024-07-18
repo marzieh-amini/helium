@@ -1,0 +1,32 @@
+.form{
+    .label {
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: block;
+      }
+      input {
+        font-size: 1.6rem;
+        padding: 6px;
+        border: 1px solid $border_Color_blue;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        &::placeholder {
+          color: $placeholder_color;
+          font-size: 1.6rem;
+        }
+      }
+      
+      textarea{
+        @extend input;
+        width: 100%;
+      }
+     
+      .error-message {
+        font-size: 1.6rem;
+        margin-top: 5px;
+        color: red;
+      }
+}

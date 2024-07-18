@@ -1,0 +1,53 @@
+.footer {
+  // position: absolute;
+  // bottom: 0;
+  width: 100%;
+  left: 0;
+  background: url("../../images/Pattern.png") no-repeat left;
+
+  background-color: $bg_footer;
+  border-radius: 8px 8px 0 0;
+  height: 130px;
+  color: #fff;
+  text-align: right;
+  &__container {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 115px auto;
+    align-items: center;
+    gap: 50px;
+  }
+  &__logo {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__description {
+    font-family: map-get($map: $fontFamily, $key: ff-primary-roman);
+    font-size: 1.6rem;
+  }
+  &__links {
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+
+      li {
+        font-family: map-get($map: $fontFamily, $key: ff-primary-roman);
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+
+

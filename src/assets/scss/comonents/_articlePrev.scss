@@ -1,0 +1,130 @@
+.article-prev {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 40px 0px;
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 100px);
+    align-items: center;
+    .writer {
+      display: grid;
+      grid-template-columns: 30px auto;
+      gap: 15px;
+      align-items: center;
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      &__name {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: flex-start;
+  }
+  &__context {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: 18px 0px;
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .description {
+      font-size: 1.6rem;
+    }
+  }
+  &__footnote {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 23px;
+      color: $second_text_color;
+      font-size: 1.2rem;
+      font-family: map-get($map: $fontFamily, $key: ff-primary-roman);
+      :last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 5px;
+      }
+      .tags {
+        background-color: $bg_tags;
+        padding: 3px 12px;
+        border-radius: 17px;
+        margin-left: 7px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__image {
+    border-radius: 5px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .article-prev {
+    grid-template-columns: 1fr;
+    &__header {
+      padding-bottom: 10px;
+    }
+    &__context {
+    }
+
+    &__footnote {
+      ul {
+        gap: 5px;
+      }
+    }
+  }
+}
+@media all and (min-width: 500px) and (max-width: 768px) {
+  .article-prev {
+    grid-template-columns: 1fr;
+    &__header {
+      padding-bottom: 10px;
+    }
+    &__context {
+    }
+
+    &__footnote ul {
+      gap: 15px;
+    }
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .article-prev {
+    grid-template-columns: repeat(2, 1fr);
+    &__header {
+      padding-bottom: 10px;
+    }
+
+    &__footnote ul {
+      gap: 15px;
+    }
+  }
+}
