@@ -12,4 +12,4 @@ Home :
 ![scrHelium](https://github.com/user-attachments/assets/11781996-953b-41c2-8790-5e14b081bcee)
 
 Profile-setting: 
-![scrheliumS](https://github.com/user-attachments/assets/411c2333-0d31-400f-b149-c60c2a369cf7)
+![scrheliumS](https://github.com/user-attachments/assets/1d4ee27e-550c-4a68-90f8-8c4a45c52e4d)
