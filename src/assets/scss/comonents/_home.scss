@@ -1,5 +1,5 @@
 .home {
-  min-height: 100vh;
+  min-height: calc(100vh - 150px);
   &__container {
     grid-template-columns: 1fr;
     // margin-bottom: 130px;
